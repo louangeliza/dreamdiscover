@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" href="Icons/Plane.png">
+    <link rel="stylesheet" href="login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    overflow: hidden;
+}
+
+.body{
+    display: flex;
+    height: 100%;
+}
+.pic img{
+    height: 760px;
+    width: 780px;
+}
+
+.head1{
+    display: flex;
+    position: absolute;
+    top: 300px;
+    left: 150px;
+    color: white;
+
+
+}
+
+.head1 img{
+    width: 30px;
+    height: 30px;
+}
+
+.form{
+    margin: 100px 100px;
+    width: 450px;
+    height: 540px;
+    flex-shrink: 0;
+    border: 1px solid rgba(0, 0, 0, 0.20);
+    background: #FAFAFA;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+form{
+    margin: 20px 70px;
+}
+
+
+.form input[type="text"]{
+    width: 300px;
+    height: 30px;
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+}
+input[type="password"]{
+    width: 300px;
+    height: 30px;
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+}
+
+
+
+.check{
+    display: flex;
+    margin: 30px 0px 10px;
+    
+    justify-content: space-between;
+}
+
+.check1{
+    display: flex;
+}
+.check p {
+    font-size: 10px;
+}
+.check a{
+    font-size: 10px;
+    text-decoration: none;
+}
+
+.admin{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.isadmin label{
+    margin-left: 130px;
+
+}
+
+.google{
+display: flex;
+width: 300px;
+height: 30px;
+padding: 10px 10px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 6px;
+background:  white;
+margin: 20px 70px 0px;
+}
+
+.facebook{
+display: flex;
+width: 300px;
+height: 30px;
+padding: 10px 10px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 6px;
+background:  #475993;
+margin: 10px 70px 0px ;
+}
+
+.google img{
+    width: 20px;
+    height: 20px;
+}
+.facebook img{
+    width: 20px;
+    height: 20px;
+}
+
+.google a{
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+}
+
+.facebook a{
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+}
+
+.social p{
+  text-align: center;
+  margin: 10px 0px 0px ;
+}
+
+
+
+.submit{
+display: flex;
+width: 300px;
+height: 30px;
+padding: 5px 10px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 6px;
+background:  #008000;
+margin: 20px 0px 0px;
+}
+
+input[type="submit"]{
+    background:  #008000;
+    border: none;
+
+}
+
+.submit a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.log{
+    display: flex;
+    margin-left: 100px;
+}
+
+.log p{
+    text-align: center;
+    margin: 40px 0px 0px;
+    color: black;
+
+    
+}
+
+.log a{
+    text-decoration: none;
+    color: blue;
+    text-align: center;
+}
+
+
+
+.head{
+    width: 100%;
+    height: 32px;
+}
+
+.head h2{
+    color: #181818;
+    text-align: center;
+}
+</style>
+
+<body>
+    <div class="body">
+        <div class="pic">
+            <img src="images2/signup.jpg">
+
+        </div>
+        <div class="head1">
+            <img src="Icons/Plane.png">
+            <h1>Dream Discover</h1>
+
+        </div>
+        <div class="form">
+            <div class="head">
+                <h2>Login</h2>
+            </div>
+            <form action="#" method="post" id="login-form">
+                <div>
+                    <label for="email">Email Address</label><br>
+                    <input type="text" name="email" id="email">
+                </div>
+
+                <div>
+                    <label for="password">Password</label><br>
+                    <input type="password" name="password" id="password">
+                </div>
+
+
+
+                <div class="check">
+                    <div class="check1">
+                        <input type="checkbox" name="termsAndConditions" id="check">
+                        <p>Keep me signed in</p>
+                    </div>
+
+                    <p><a href="#">Forgot password?</a></p>
+
+
+                </div>
+                <div class="submit">
+                    <input type="submit" value="Login"></a>
+                </div>
+            </form>
+            
+
+
+            <div class="social">
+
+                <p>or use one of these options</p>
+                <div class="google">
+                    <img src="images2/google.jfif">
+                    <a href="#">Continue with google</p>
+                </div>
+                <div class="facebook">
+                    <img src="images2/facebook (2).png">
+                    <a href="#">Continue with facebook</p>
+                </div>
+            </div>
+
+            <div class="log">
+                <p>Don't have an account?
+                <p>
+                    <a href="/register">Register</a>
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+
+    </div>
+    </div>
+
+
+</body>
+<script>
+    document.getElementById('login-form').addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent the default form submission behavior
+
+        const form = event.target; // Get the form element
+        const formData = new FormData(form);
+        const email=formData.get("email");
+        const password=formData.get("password")
+
+        const dataToSend = {
+            email: email,
+            password: password,
+        };
+
+        fetch("http://localhost:4000/auth/login", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(dataToSend),
+        })
+        .then(response => response.json())
+        .then(data => {
+            
+            if (data.message === 'Successfully logged in') {
+                
+                alert('Now you can secure your reservation');
+                
+                window.location.href ='/booking';}else {
+                
+                alert('Login failed. Please check your credentials.');
+            }
+            console.log("API Response:", data);
+           
+        })
+        .catch(error => {
+         
+            console.log("Error:", error);
+        });
+    });
+</script>
+</body>
+</html>

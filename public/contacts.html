@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="icon" href="Icons/Plane.png">
+    <link rel="stylesheet" href="contacts.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<style>
+    *{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    background-color:  #f2f2f2;
+}
+.nav-bar {
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    height: 60px;
+    display: flex;
+
+}
+
+.nav-bar img{
+    width: 40px;
+    height: 40px;
+
+}
+
+.head {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: green;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.head h1{
+    margin-left: 20px;
+}
+
+.forms{
+    display: flex;
+}
+.body{
+    width: 500px;
+    height: 500px;
+    margin:100px ;
+    padding: 50px;
+    border-radius: 10px;
+    border: 0.25px solid rgba(0, 0, 0, 0.50);
+    background: rgba(255, 255, 255, 0.45);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    
+}
+input[type="submit"] {
+    margin-left: 20px;
+    background: green;
+    color: white;
+    padding: 10px;
+    border: 1px solid green;
+    border-radius: 6px;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 120px;
+    margin-top: 20px;
+}
+
+input[type="email"] {
+    height: 30px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    margin: 30px;
+}
+
+input[type="text"] {
+    height: 30px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    margin: 30px;
+}
+
+
+.container{
+    width: 500px;
+    height: 500px;
+    margin:100px;
+    padding: 50px;
+    border-radius: 5px;
+    border: 0.25px solid rgba(0, 0, 0, 0.50);
+    background: rgba(255, 255, 255, 0.45);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+#contactForm input:nth-child(2){
+    height: 30px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    margin: 30px;
+
+}
+
+
+
+#contactForm textarea{
+    height: 90px;
+    width: 90%;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+
+}
+
+
+.title {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 100px;
+}
+
+.menu{
+    display: flex;
+}
+
+.bell{
+    display: flex;
+}
+
+.bell img{
+    margin-top: 30px;
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.menu ul {
+    display: inline-flex;
+    top: 0px;
+    margin-left: 400px;
+    margin-top: 10px;
+    margin-right: 40px;
+}
+
+.menu ul li {
+    padding: 15px;
+
+
+}
+
+.menu ul li a {
+   text-decoration: none;
+   color: black;
+
+}
+
+.footer{
+    box-shadow: 0px -2px 2px 0px #8d8b8b;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+    width: 100%;
+    height: 350px;
+    display: flex;
+}
+.foot{
+    display: flex;
+}
+
+.foot h4{
+    font-size: 25px;
+}
+
+.foot1,.foot2,.foot3,.foot4,.foot5{
+    margin:50px;
+}
+
+.footer ul,p{
+  margin-top: 15px;
+}
+
+.footer ul li{
+    margin-top: 10px;
+}
+
+.footer a{
+    color: green;
+}
+
+@media screen and (max-width: 768px) {
+    /* Apply these styles when the screen width is 768px or smaller */
+    
+    /* Adjust nav-bar and menu */
+    /* .nav-bar {
+        flex-direction: column;
+        align-items: center;
+    } */
+
+    /* .menu {
+        margin-left: 0;
+        margin-top: 10px; 
+        text-align: center;
+    } */
+/* 
+    .bell img {
+        margin: 10px auto; 
+    } */
+
+    /* Adjust form body */
+    /* .body {
+        width: 90%;
+        margin: 20px auto;
+        padding: 20px;
+    } */
+
+  
+    input[type="text"],
+    input[type="email"] {
+        width: 100%; 
+        margin: 0px; 
+    }
+
+  
+    input[type="submit"] {
+        margin-left: auto;
+        margin-right: auto; 
+    }
+
+    
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .foot {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .foot h4 {
+        font-size: 20px; 
+        margin-top: 10px; 
+    }
+
+    .footer ul,
+    .footer p {
+        text-align: center;
+    }
+
+    .footer ul li {
+        margin-top: 5px; 
+    }
+   
+.menu{
+    display: none;
+}
+    
+}
+
+
+
+</style>
+
+<body>
+    <div class="nav-bar">
+        <div class="title">
+            <img src="Icons/Plane-green.png">
+            <h1>Dream Discover</h1>
+        </div>
+
+
+        <div class="menu">
+            <ul type="none">
+                <li><a href="/">Home</a></li>
+                <li><a href="/booking">Booking</a></li>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+                
+
+            </ul>
+         
+
+        </div>
+    </div>
+    <div class="forms">
+        <div class="body">
+
+            <div class="head">
+
+                <h1>Contact Us</h1>
+            </div>
+
+            <!-- Contact Form -->
+            <form id="contactForm">
+                <label for="name">First Name:</label>
+                <input type="text" id="name" name="firstName" required><br>
+                
+                <label for="name">Last Name:</label>
+                <input type="text" id="name" name="lastName" required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br>
+
+                <input type="submit" value="Send Message">
+            </form>
+
+        </div>
+       
+            
+
+
+           
+
+        </div> 
+    </div>
+    <div class="footer">
+        <div class="foot1">
+            <div class="foot">
+                <img src="Icons/Plane-green.png">
+                <h4>Dream Discover</h4>
+            </div>
+            <p>Your next goto companion <br>for travel</p>
+            <p>&copy; Dream Discover 2023</p>
+
+        </div>
+
+        <div class="foot2">
+            <h4>Quick links</h4>
+            <ul type="none">
+                <a href="/about"><li>About Us</li></a>
+                <a href="/"><li>Explore</li></a>
+                <a href="/booking"><li>Booking</li></a>
+                <a href="/contact"><li>Contact Us</li></a>
+            </ul>
+
+        </div>
+
+        <div class="foot3">
+            <h4>Countries</h4>
+            <ul type="none">
+                <li>Rwanda</li>
+                <li>Australia</li>
+                <li>Italy</li>
+                <li>Greece</li>
+                <li>Maldives</li>
+                <li>Switzeland</li>
+                <li><a href="#">See more</a></li>
+            </ul>
+
+        </div>
+
+        <div class="foot4">
+            <h4>Terms and Policies</h4>
+            <ul type="none">
+                <li>Privacy Policy</li>
+                <li>Terms of use</li>
+                <li>Accesibility</li>
+            </ul>
+
+        </div>
+
+        <div class="foot5">
+            <h4>Help</h4>
+            <ul type="none">
+                <li>Support</li>
+                <li>Cancel your bookings</li>
+                <li>Refund Policies</li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+<script>
+    //get the form by its id
+  // get the form by its id
+  const form = document.getElementById("contactForm");
+  const firstnameField=document.getElementById("firstName")
+  const secondnameField=document.getElementById("secondName")
+  const emailField = document.getElementById("email"); 
+  const messageField = document.getElementById("message"); 
+  
+  const sendMail = (mail) => {
+    fetch("/send", {
+      method: "post",
+      body: mail,
+    }).then((response) => {
+      alert("Your email has been received, thank you for contacting us");
+      window.location.href = '/about'
+  
+      return response.json();
+    });
+  };
+  
+  const formEvent = form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+  
+    let mail = new FormData(form);
+  
+    try {
+      const response = await sendMail(mail);
+  
+      if (response && response.success) {
+        console.log("Email sent successfully");
+  
+        // You can also display a success message to the user
+      } else {
+        console.error("Error sending email");
+        // Display an error message to the user
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      // Display an error message to the user
+    }
+  });
+  
+  
+  </script>
+</html>
