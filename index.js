@@ -7,6 +7,7 @@ import { fileURLToPath } from 'url';
 import { dirname } from 'path';
 import nodemailer from 'nodemailer';
 import multiparty from 'multiparty'
+import path from 'path';
 
 import tourRoute from './routes/tours.js';
 import userRoute from './routes/users.js';
@@ -36,7 +37,8 @@ conn.on('error', () => {
   console.log('Connection to the database failed');
 });
 
-app.use(express.static('public'));
+// ...
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
 app.use(cors(corsOptions));
 app.use(cookieParser());
